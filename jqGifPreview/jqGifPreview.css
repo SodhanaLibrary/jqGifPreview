@@ -1,0 +1,151 @@
+.jqGifPreview {
+	display: inline-block;
+	min-height: 44px;
+	position: relative;
+}
+
+.jqGifPreview .jqGifImageCenter {
+	background-position: 0px 0px;
+	height: 72px;
+	overflow-wrap: break-word;
+	position: absolute;
+	top: 50%;
+	width: 72px;
+	background: rgba(0, 0, 0, 0) url("background-image.png") no-repeat
+		scroll 0px 0px/auto padding-box border-box;
+	margin: -36px 0px 0px -36px;
+}
+
+.jqGifPreview img {
+	padding:0px;
+	margin:0px;
+}
+
+.jqGifPreview .jqGifImageCircle {
+	background-position: 0px -73px;
+	height: 66px;
+	position: absolute;
+	width: 66px;
+	background: rgba(0, 0, 0, 0) url("background-image.png") no-repeat
+		scroll 0px -73px/auto padding-box border-box;
+	margin: -33px 0px 0px -33px;
+}
+
+.jqGifPreview .jqGifImageName {
+	background-position: 0px -140px;
+	height: 17px;
+	position: absolute;
+	width: 32px;
+	background: rgba(0, 0, 0, 0) url("background-image.png") no-repeat
+		scroll 0px -140px/auto padding-box border-box;
+	margin: -9px 0px 0px -16px;
+}
+
+.jqGifPreview .jqGifImageFooter {
+	background-position: 0px 0px;
+	bottom: 0px;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	height: 56px;
+	left: 0px;
+	position: absolute;
+	right: 0px;
+	background: rgba(0, 0, 0, 0) url("background-image2.png") repeat-x
+		scroll 0px 0px/auto padding-box border-box;
+}
+
+.jqGifPreview .jqGifImageFooterLeft {
+	bottom: 9px;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	height: 18px;
+	left: 11px;
+	max-width: 400px;
+	overflow-wrap: break-word;
+	position: absolute;
+	text-align: left;
+	text-shadow: rgba(0, 0, 0, 0.4) 0px 1px 4px;
+	text-overflow: ellipsis;
+	text-transform: uppercase;
+	vertical-align: top;
+	white-space: nowrap;
+	width: 186px;
+	word-wrap: break-word;
+	perspective-origin: 93px 7px;
+	transform-origin: 93px 7px;
+	border: 0px none rgb(255, 255, 255);
+	font: normal normal bold normal 11px/14.74px helvetica, arial,
+		sans-serif;
+	outline: rgb(255, 255, 255) none 0px;
+	overflow: hidden;
+	text-decoration: none;
+}
+
+.jqGifPreview .jqGifImageFooterRight {
+	background-position: 0px -158px;
+	bottom: 9px;
+	cursor: pointer;
+	display: block;
+	height: 24px;
+	position: absolute;
+	right: 10px;
+	width: 24px;
+	background: rgba(0, 0, 0, 0) url("background-image.png") no-repeat
+		scroll 0px -158px/auto padding-box border-box;
+}
+
+.jqGifPreview img {
+	width: 100%;
+}
+
+.jqGifPreview .jqGifImage {
+	width: 100%;
+}
+
+.jqGifPreview .jqGifCircle {
+	cursor: pointer;
+	position: absolute;
+    left: calc(50%);
+    top: calc(50% - 12px);
+}
+
+@-webkit-keyframes jqGifRotating / Safari and Chrome / {from {
+	-ms-transform:rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+to {
+	-ms-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+
+}
+@keyframes jqGifRotating {from { -ms-transform:rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+to {
+	-ms-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+
+}
+.jqGifPreview .jqGifRotating {
+	-webkit-animation: jqGifRotating 2s linear infinite;
+	-moz-animation: jqGifRotating 2s linear infinite;
+	-ms-animation: jqGifRotating 2s linear infinite;
+	-o-animation: jqGifRotating 2s linear infinite;
+	animation: jqGifRotating 2s linear infinite;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<style>
+div {
+  margin:auto;
+  margin-bottom:10px;
+  width:400px;
+}
+</style>
+<link rel="stylesheet" href="jqGifPreview/jqGifPreview.css" />
+<title>Gif Preview with jquery</title>
+</head>
+<body>
+	<div>
+	    <img class="myImg" src="sample_first_frame.png" data-gif="sample_giphy.gif" />
+	</div>
+	<div>
+	    <img class="myImg" src="sample_first_frame.png"	data-gif="sample_giphy.gif" />
+	</div>
+	<div>
+	    <img id="myImg" src="sample_first_frame.png" data-gif="sample_giphy.gif" />
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="jqGifPreview/jqGifPreview.js"></script>
+<script>
+	$(function() {
+		$(".myImg").jqGifPreview();
+		$("#myImg").jqGifPreview();
+	});
+</script>
+</html>
